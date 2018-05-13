@@ -1,0 +1,215 @@
+.hover {
+    opacity: 0;
+}
+
+.hover:hover{
+    opacity: 1;
+}
+
+
+.column.dlr {
+  background-color: #00afad;
+  color: white;
+  border-bottom: 3px solid #007c7b;
+}
+
+
+.column.london-overground {
+  background-color: #e86a10;
+  color: white;
+  border-bottom: 3px solid #b8540d;
+}
+
+.column.tfl-rail {
+  background-color: #113B92;
+  color: white;
+  border-bottom: 3px solid #0c2964;
+}
+
+.column.frame {
+  background-color: #3D505A;
+  color: white;
+  border-bottom: 3px solid #28353c;
+}
+
+.column.bakerloo {
+  background-color: #946338;
+  color: white;
+  border-bottom: 3px solid #6f4a2a;
+}
+
+.column.central {
+  background-color: #EF4023;
+  color: black;
+  border-bottom: 3px solid #d02b0f;
+}
+
+.column.circle {
+  background-color: #FFDD00;
+  color: black;
+  border-bottom: 3px solid #ccb100;
+}
+
+.column.district {
+  background-color: #009A5A;
+  color: white;
+  border-bottom: 3px solid #00673c;
+}
+
+.column.east {
+  background-color: #FAA61A;
+  color: black;
+  border-bottom: 3px solid #dc8b05;
+}
+
+.column.hammersmith-city {
+  background-color: #F386A1;
+  color: black;
+  border-bottom: 3px solid #ee587d;
+}
+
+.column.jubilee {
+  background-color: #7A868E;
+  color: black;
+  border-bottom: 3px solid #626c73;
+}
+
+.column.metropolitan {
+  background-color: #78004C;
+  color: white;
+  border-bottom: 3px solid #45002c;
+}
+
+.column.northern {
+  background-color: #231F20;
+  color: white;
+  border-bottom: 3px solid #080707;
+}
+
+.column.piccadilly {
+  background-color: #034EA2;
+  color: white;
+  border-bottom: 3px solid #023670;
+}
+
+.column.victoria {
+  background-color: #0095D7;
+  color: white;
+  border-bottom: 3px solid #0072a4;
+}
+
+.column.waterloo-city {
+  background-color: #79CBBE;
+  color: black;
+  border-bottom: 3px solid #54bdac;
+}
+
+.level-1 {
+  color: black;
+  background-color: #ff1744;
+  border-bottom: 3px solid #e3002c;
+}
+
+.level-2 {
+  color: black;
+  background-color: #ff4136;
+  border-bottom: 3px solid #ff1103;
+}
+
+.level-3 {
+  color: black;
+  background-color: #ff6b29;
+  border-bottom: 3px solid #f54c00;
+}
+
+.level-4 {
+  color: black;
+  background-color: #ff961b;
+  border-bottom: 3px solid #e77d00;
+}
+
+.level-5 {
+  color: black;
+  background-color: #ffc00e;
+  border-bottom: 3px solid #daa100;
+}
+
+.level-6 {
+  color: black;
+  background-color: #ffea00;
+  border-bottom: 3px solid #ccbb00;
+}
+
+.level-7 {
+  color: black;
+  background-color: #bfe91e;
+  border-bottom: 3px solid #9dc113;
+}
+
+.level-8 {
+  color: black;
+  background-color: #80e83b;
+  border-bottom: 3px solid #65d719;
+}
+
+.level-9 {
+  color: black;
+  background-color: #40e759;
+  border-bottom: 3px solid #1bd938;
+}
+
+.level-10 {
+  color: white;
+  background-color: #00e676;
+  border-bottom: 3px solid #00b35c;
+}
+
+
+.level-20 {
+  color: black;
+  background-color: #ff1744;
+  border-bottom: 3px solid #e3002c;
+}
+
+.hero.is-primary nav {
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.12);
+}
+.hero.is-primary nav li {
+  font-size: .9em;
+  font-weight: 100;
+  letter-spacing: 1px;
+  position: relative;
+}
+.hero.is-primary nav li a {
+  border: 0;
+}
+.hero.is-primary nav .is-active {
+  padding-bottom: 5px;
+}
+.hero.is-primary nav .is-active::after {
+  border-color: transparent;
+  border-bottom-color: #d0dadf;
+  border-style: solid;
+  border-width: 5px;
+  bottom: 0;
+  content: '';
+  display: inline-block;
+  left: 0;
+  margin: 0 auto;
+  mix-blend-mode: screen;
+  position: absolute;
+  right: 0;
+  width: 0;
+}
+
+.status .columns {
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.12);
+  margin: 0 0 .5em 0;
+  transition: box-shadow .13s linear;
+}
+.status .columns .column {
+  transition: all .15s ease-in-out;
+}
+.status .columns:active, .status .columns:focus, .status .columns:hover {
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.36);
+}
