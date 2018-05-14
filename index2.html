@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+        <meta charset="UTF-8">
+        <title>tfl service status.</title>
+
+        <!–– css bits -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel='stylesheet prefetch' href='css/bulma.min.css'>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+<body>
+
+  <section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        TFL Service Status
+      </h1>
+      <h2 class="subtitle">
+        Check the status of TFL's Network
+      </h2>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <nav class="tabs is-centered">
+      <div class="container">
+        <ul class="filters">
+          <li>
+            <a data-filter="all"><i class="fas fa-info-circle"></i>&nbsp;All Services</a>
+          </li>
+          <li>
+            <a data-filter="tube"><i class="fas fa-subway"></i>&nbsp;London Underground</a>
+          </li>
+            <li class="is-active">
+            <a data-filter="all"><i class="far fa-frown"></i>&nbsp;Met Mode</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section ng-app="ServiceStatus" class="status section">
+  <div ng-controller="mainController" class="container">
+    <div class="columns {{line.modeName}}" ng-repeat="line in data">
+      <div class="column is-three-quarters has-text-white" ng-class="line.id">{{line.name}}</div>
+      <div class="column is-one-quarters level-{{line.lineStatuses[0].statusSeverity}}">{{line.lineStatuses[0].statusSeverityDescription}}</div>
+    </div>
+  </div>
+</section>
+    
+    
+    
+    
+
+    
+    
+    
+
+    <footer class="footer">
+        
+      <div class="container">
+        <div class="content has-text-centered">
+          <div class="columns is-mobile is-centered">
+            <div class="column is-narrow">
+              <p class="bd-notification is-info">
+                  <small>made with </small>
+                <a class="icon"><i class="fa fa-heart"></i></a>
+                  <small> &amp;</small>
+                  <a class="icon"><i class="fas fa-code"></i></a>
+                  <small> by ryan jacques.</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        
+        <br>
+        <div class="container hover">
+          <div class="columns is-centered">
+        <ul class="filters">
+          <li>
+            <a data-filter="all"><i class="far fa-frown"></i>&nbsp;Met Mode</a>
+          </li>
+        </ul>
+              </div>
+      </div>
+        
+    </footer>
+    
+        <!–– css bits -->
+        <script src='js/angular.min.js'></script>
+        <script src='js/jquery.min.js'></script>
+        <script  src="js/index2.js"></script>
+    
+    </body>
+</html>
