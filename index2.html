@@ -30,10 +30,10 @@
       <div class="container">
         <ul class="filters">
           <li>
-            <a data-filter="all"><i class="fas fa-info-circle"></i>&nbsp;All Services</a>
+            <a href="index.html"><i class="fas fa-info-circle"></i>&nbsp;All Services</a>
           </li>
           <li>
-            <a data-filter="tube"><i class="fas fa-subway"></i>&nbsp;London Underground</a>
+            <a href="index.html"><i class="fas fa-subway"></i>&nbsp;London Underground</a>
           </li>
             <li class="is-active">
             <a data-filter="all"><i class="far fa-frown"></i>&nbsp;Met Mode</a>
@@ -47,8 +47,8 @@
 <section ng-app="ServiceStatus" class="status section">
   <div ng-controller="mainController" class="container">
     <div class="columns {{line.modeName}}" ng-repeat="line in data">
-      <div class="column is-three-quarters has-text-white" ng-class="line.id">{{line.name}}</div>
-      <div class="column is-one-quarters level-{{line.lineStatuses[0].statusSeverity}}">{{line.lineStatuses[0].statusSeverityDescription}}</div>
+      <div class="column is-three-quarters has-text-white" ng-class="line.id">Metropolitan</div>
+      <div class="column is-one-quarters level-{{line.lineStatuses[0].statusSeverity}}">Probably Broken</div>
     </div>
   </div>
 </section>
